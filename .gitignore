@@ -1,0 +1,64 @@
+# ==============================================================================
+# Fichier .gitignore - Application E-Commerce Laravel
+# ==============================================================================
+
+# --- Dépendances PHP & Composer ---
+/vendor/
+composer.phar
+
+# --- Dépendances JavaScript / Node.js & Outils de Build ---
+/node_modules/
+/public/build
+/public/hot
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json.backup
+
+# --- Variables d'environnement & Données sensibles ---
+.env
+.env.backup
+.env.production
+.env.local
+.env.*.local
+/storage/*.key
+auth.json
+
+# --- Stockage et Fichiers générés de Laravel ---
+/storage/app/*
+!/storage/app/.gitignore
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+/public/storage
+
+# --- Fichiers de Cache & Outils de Test ---
+.phpunit.result.cache
+.phpunit.cache/
+
+# --- Environnements de Développement & Machines Virtuelles ---
+Homestead.json
+Homestead.yaml
+.vagrant/
+
+# --- Environnements de Développement Intégré (IDE) & Éditeurs ---
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.fleet/
+
+# --- Fichiers Spécifiques aux Systèmes d'Exploitation ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
